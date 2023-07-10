@@ -15,6 +15,7 @@ body{
     backdrop-filter: brightness(30%) blur(50px);
     background-size: cover;
     background-repeat: repeat;
+    user-select: none;
 }
 
 main{
@@ -97,11 +98,8 @@ main{
             filter: brightness(130%);
         }
 
-        &:focus{
-            filter:contrast(1.2) brightness(0.5);
-        }
-
         &:active {
+            filter: brightness(0.7) contrast(1.3);
             border: 1px solid TRANSPARENT;
           }
         
