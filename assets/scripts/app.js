@@ -1,7 +1,7 @@
 const leftColumn = document.getElementById("iconLeft");
 const rightColumn = document.getElementById("iconRight");
 
-const iconsLeft = ['is', 'casino', 'magazyn', 'wyprawa', 'biolog', 'bs', 'top-gracze', 'g', 'poli', 'dopalacze', 'kalendarz', 'sprawdzenie-postaci', 'kosz'];
+const iconsLeft = ['is', 'casino', 'magazyn', 'wyprawa', 'biolog', 'bs', 'top-gracze', 'pet', 'poli', 'dopalacze', 'kalendarz', 'sprawdzenie-postaci', 'kosz'];
 const iconsRight = ['battlepass', 'dailyreward', 'sklep', 'polowanie', 'kolekcjoner', 'zmiana-eq', 'top-gildie', 'autobuff', 'poli-usun', 'bonusy24', 'patch-notes', 'wiki', 'snake'];
 const iconsPath = './assets/images/sidebar/icons/';
 
