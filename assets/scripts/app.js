@@ -17,3 +17,8 @@ const imgs = document.getElementsByTagName('img');
 for(let j = 0; j < imgs.length; j++ ) {
     imgs[j].setAttribute("draggable", "false")
 }
+
+//disable context menu
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
