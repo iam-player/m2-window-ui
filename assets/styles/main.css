@@ -44,8 +44,14 @@ button, input, form, dialog {
   all: unset;
 }
 
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/tahoma.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-size: 11px;
   color: white;
   background: url("../images/background.jpg") center no-repeat;

@@ -9,5 +9,3 @@ for (let i = 0; i < iconsLeft.length; i++){
     leftColumn.innerHTML += `<img class="sidebarIcon" src="${iconsPath}${iconsLeft[i]}/${iconsLeft[i]}_norm.png">`;
     rightColumn.innerHTML += `<img class="sidebarIcon" src="${iconsPath}${iconsRight[i]}/${iconsRight[i]}_norm.png">`;
 }
-
-
