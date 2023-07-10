@@ -65,7 +65,7 @@ main {
 
 .window__title {
   position: absolute;
-  width: 78px;
+  width: 73px;
   height: 23px;
   background: url("../images/titlebar/titlebar_left.png"), url("../images/titlebar/titlebar_right.png"), url("../images/titlebar/titlebar_center.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -77,11 +77,12 @@ main {
   margin-top: 7px;
 }
 .window__title p {
-  margin-top: -3px;
+  font-weight: lighter;
+  margin-top: -2px;
 }
 
 .window__body {
-  width: 90px;
+  width: 85px;
   height: 500px;
   border-radius: 10px;
   padding-right: 2px;

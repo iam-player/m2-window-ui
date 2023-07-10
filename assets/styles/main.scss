@@ -3,7 +3,7 @@
 @use './builder/window';
 
 $height: 500px;
-$width: 90px;
+$width: 85px;
 $titlePadding: 30px;
 $mainColor: white;
 
@@ -39,7 +39,8 @@ main{
     margin-top: 7px;
 
     p{
-        margin-top: -3px;
+        font-weight: lighter;
+        margin-top: -2px;
     }
 }
 
