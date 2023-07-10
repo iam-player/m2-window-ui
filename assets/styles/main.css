@@ -71,14 +71,45 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.window__input {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  float: left;
+}
+.window__input input {
+  margin: 10px;
+  background-color: rgb(20, 9, 0);
+  border: 1px solid white;
+  padding-left: 5px;
+  color: rgb(223, 223, 223);
+  width: 150px;
+  height: 15px;
+}
+.window__input button {
+  margin: 10px;
+  color: rgb(20, 9, 0);
+  border: 1px solid rgb(177, 177, 177);
+  padding-left: 5px;
+  background-color: white;
+  width: 70px;
+  height: 15px;
+  text-align: center;
 }
 
 .window__title {
   position: absolute;
-  width: 73px;
+  width: 543px;
   height: 23px;
+  max-width: 1600px;
+  max-height: 960px;
   background: url("../images/titlebar/titlebar_left.png"), url("../images/titlebar/titlebar_right.png"), url("../images/titlebar/titlebar_center.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: top left, top right, top center;
   color: white;
   display: flex;
@@ -93,7 +124,7 @@ main {
 }
 
 .window__body {
-  width: 85px;
+  width: 555px;
   height: 500px;
   border-radius: 10px;
   padding-right: 2px;

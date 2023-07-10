@@ -8,7 +8,7 @@
 }
 
 $height: 500px;
-$width: 85px;
+$width: 555px;
 $titlePadding: 30px;
 $mainColor: white;
 
@@ -29,14 +29,47 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.window__input{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    float: left;
+
+    input{
+        margin: 10px;
+        background-color: rgb(20, 9, 0);
+        border: 1px solid $mainColor;
+        padding-left: 5px;
+        color:rgb(223, 223, 223);
+        width: 150px;
+        height: 15px;
+    }
+
+    button{
+        margin: 10px;
+        color: rgb(20, 9, 0);
+        border: 1px solid rgb(177, 177, 177);
+        padding-left: 5px;
+        background-color: $mainColor;
+        width: 70px;
+        height: 15px;
+        text-align: center;
+    }
 }
 
 .window__title{
     position: absolute;
     width: calc($width - 12px);
     height: 23px;
+    max-width: 1600px;
+    max-height: 960px;
     background: url('../images/titlebar/titlebar_left.png'), url('../images/titlebar/titlebar_right.png'), url('../images/titlebar/titlebar_center.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: top left, top right, top center;
     color: $mainColor;
     display: flex;
