@@ -40,7 +40,7 @@ main{
 
     .window__title{
         position: absolute;
-        width: $width;
+        width: $width - 12;
         height: 23px;
         max-width: 1500px;
         max-height: 700px;
