@@ -74,40 +74,16 @@ main {
   flex-direction: column;
 }
 
-.window__input {
+.window__container {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  align-items: center;
-  width: 500px;
-  float: left;
 }
-.window__input input {
-  margin: 10px;
-  background-color: rgb(20, 9, 0);
-  border: 1px solid white;
-  padding-left: 5px;
-  color: rgb(223, 223, 223);
-  width: 150px;
-  height: 15px;
-}
-.window__input button {
-  margin: 10px;
-  color: rgb(20, 9, 0);
-  border: 1px solid rgb(177, 177, 177);
-  padding-left: 5px;
-  background-color: white;
-  width: 70px;
-  height: 15px;
-  text-align: center;
-}
-
-.window__title {
+.window__container .window__title {
   position: absolute;
-  width: 543px;
+  width: 500px;
   height: 23px;
-  max-width: 1600px;
-  max-height: 960px;
+  max-width: 1500px;
+  max-height: 700px;
   background: url("../images/titlebar/titlebar_left.png"), url("../images/titlebar/titlebar_right.png"), url("../images/titlebar/titlebar_center.png");
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: top left, top right, top center;
@@ -117,15 +93,16 @@ main {
   align-items: center;
   margin-top: 7px;
 }
-.window__title p {
+.window__container .window__title p {
   font-weight: lighter;
   margin-top: -2px;
   margin-left: -6px;
 }
-
-.window__body {
-  width: 555px;
-  height: 500px;
+.window__container .window__body {
+  width: 500px;
+  height: 300px;
+  max-height: 700px;
+  max-width: 1500px;
   border-radius: 10px;
   padding-right: 2px;
   display: flex;
@@ -137,8 +114,7 @@ main {
   box-shadow: 0px 0px 40px -17px rgb(0, 0, 0);
   box-shadow: inset 0px 0px 0px 3px rgb(0, 0, 0);
 }
-
-.icon__container {
+.window__container .window__body .icon__container {
   padding-top: 30px;
   height: 100%;
   display: grid;
@@ -148,24 +124,51 @@ main {
   align-items: center;
   gap: 3px;
 }
-
-#iconLeft, #iconRight {
+.window__container .window__body #iconLeft, .window__container .window__body #iconRight {
   display: grid;
   justify-content: flex-end;
   gap: 3px;
 }
-#iconLeft img, #iconRight img {
+.window__container .window__body #iconLeft img, .window__container .window__body #iconRight img {
   max-height: 32px;
   max-width: 32px;
 }
-#iconLeft img:hover, #iconRight img:hover {
+.window__container .window__body #iconLeft img:hover, .window__container .window__body #iconRight img:hover {
   filter: brightness(130%);
 }
-#iconLeft img:active, #iconRight img:active {
+.window__container .window__body #iconLeft img:active, .window__container .window__body #iconRight img:active {
   filter: brightness(0.7) contrast(1.3);
   border: 1px solid TRANSPARENT;
 }
-
-#iconRight {
+.window__container .window__body #iconRight {
   justify-content: flex-start;
+}
+.window__container .window__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window__container .window__input form {
+  flex-direction: column;
+  display: flex;
+  margin: 10px;
+}
+.window__container .window__input form input {
+  background-color: rgb(20, 9, 0);
+  border: 1px solid white;
+  padding-left: 5px;
+  color: rgb(223, 223, 223);
+  width: 100%;
+  height: 15px;
+  margin: 5px 0;
+}
+.window__container .window__input form button {
+  color: rgb(20, 9, 0);
+  border: 1px solid rgb(177, 177, 177);
+  padding-left: 5px;
+  background-color: white;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */
